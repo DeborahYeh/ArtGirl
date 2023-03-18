@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+/* = QNA ================ */
+
+.checkbx {
+	clear: both;
+	width: 900px;
+	margin: 70px auto 30px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 0px 40px 30px 40px;
+	background: #e6e6e6;
+	letter-spacing: 1px;
+}
+
+.checkbx u {
+	display: block;
+	width: 66px;
+	height: 66px;
+	margin: -33px auto 0;
+	background: #ed1b24;
+	line-height: 60px;
+	border-radius: 100%;
+	text-decoration: none;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.optionbx {
+	margin-top: 20px;
+}
+
+.optionbx b {
+	font-size: 28px;
+	font-weight: 500;
+	color: #111;
+}
+
+.optionbx ul {
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+
+.optionbx ul li {
+	list-style: none;
+	padding: 0 5px;
+	margin-bottom: 10px;
+	height: 45px;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	line-height: 45px;
+	padding: 0;
+	font-size: 17px;
+	text-indent: 55px;
+	background: url(../img/checkicon.png) no-repeat #bdbdbd;
+	color: #151515;
+	cursor: pointer;
+}
+
+.btn-primary {
+	border: none;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:hover {
+	border: none;
+	color: #151515;
+	font-weight: bold;
+	background: url(../img/checkicon_on.png) no-repeat #ffde00;
+}
+
+.btn-primary.focus {
+	box-shadow: none;
+}
+
+[data-toggle=buttons] .btn input[type=checkbox],
+[data-toggle=buttons] .btn input[type=radio],
+[data-toggle=buttons] .btn-group .btn input[type=checkbox],
+[data-toggle=buttons] .btn-group .btn input[type=radio] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	pointer-events: none;
+}
+
+
+.formbx {
+	width: 900px;
+	margin: 5px auto 15px auto;
+	letter-spacing: 1px;
+}
+
+.formbx ul {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.formbx ul li {
+	height: 45px;
+	padding: 0 5px;
+	margin: 5px 0;
+}
+
+.formbx .input-group-addon {
+	background: #e6e6e6;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 0.75rem;
+	color: #151515;
+	font-size: 18px;
+	border: none;
+	font-weight: 400;
+}
+
+.formbx .form-control {
+	background: #e6e6e6;
+	height: 45px;
+	line-height: 45px;
+}
+
+.input-group .form_select {
+	position: relative;
+	z-index: 2;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	width: 1%;
+	margin-bottom: 0;
+	border-radius: 0.25rem;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding: 0.5rem 0.75rem;
+	height: 45px;
+	line-height: 45px;
+	color: #151515;
+	background: #e6e6e6;
+}
+
+.form_select.bh {
+	border-radius: 0;
+	margin-right: -1px;
+}
+
+.button {
+	position: relative;
+	height: 62px;
+	line-height: 60px;
+	padding: 0 100px;
+	margin: 10px 0 20px;
+	font-size: 30px;
+	font-weight: 700;
+	/* color: white; */
+	text-align: center;
+	/* text-decoration: none; */
+	text-shadow: 0 0 4px #0072a9;
+	letter-spacing: 3px;
+	background-color: #2abbff;
+	background-clip: padding-box;
+	border: 0px solid;
+	border-color: #1c65b2 #18589c #18589c;
+	border-radius: 8px;
+	/* -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2); */
+	/* box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2); */
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	/* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04)); */
+	cursor: pointer;
+	vertical-align: top;
+	overflow: hidden;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	box-shadow: 0 6px 0 #0072a9;
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	top: -25%;
+	bottom: -25%;
+	left: -20%;
+	right: -20%;
+	border-radius: 50%;
+	background: transparent;
+	-webkit-box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+	box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+	font-family: 微軟正黑體;
+}
+
+.button:hover {
+	/* height: 70px; */
+	/* line-height: 70px; */
+	/* padding: 0 120px; */
+	/* font-size: 28px; */
+	background-color: #1a74d3;
+	-moz-transform: rotate(-3deg) skewX(-8deg);
+	/* -webkit-transform: rotate(-3deg) skewX(-8deg); */
+	-o-transform: rotate(-3deg) skewX(-8deg);
+	-ms-transform: rotate(-3deg) skewX(-8deg);
+	/* transform: rotate(-3deg) skewX(-8deg); */
+	text-shadow: 0px 0px 20px #fff;
+}
+
+.button:active {
+	top: 5px;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 -1px #154c86;
+	background: #1f71c8;
+	border-color: #113f70 #154c86 #1c65b2;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+	background-image: -webkit-linear-gradient(top, #1a5da5, #3a8be0);
+	background-image: -moz-linear-gradient(top, #1a5da5, #3a8be0);
+	background-image: -o-linear-gradient(top, #1a5da5, #3a8be0);
+	background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);
+}
+
+.button:active::before {
+	top: -50%;
+	bottom: -125%;
+	left: -15%;
+	right: -15%;
+	-webkit-box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width:62em) {
+	.formbx {
+		width: 90%;
+	}
+	.checkbx {
+		width: 90%;
+	}
+}
+
+@media (max-width:47.9em) {
+	.checkbx {
+		width: 104%;
+		padding: 0 1% 1% 1%;
+		margin: 30px -2%;
+	}
+	.optionbx ul li {
+		height: 35px
+	}
+	.btn {
+		font-size: 14px;
+		background-size: 35px 35px;
+		text-indent: 38px;
+		line-height: 35px;
+	}
+	.btn-primary:active,
+	.btn-primary.active,
+	.show > .btn-primary.dropdown-toggle,
+	.btn-primary:hover {
+		background-size: 35px 35px;
+	}
+	.checkbx u {
+		margin: -20px auto 0;
+	}
+	.formbx {
+		width: 104%;
+		padding: 0 1% 1% 1%;
+		margin: 10px -2%;
+	}
+	.submitbtn {
+		width: 80%;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,164 @@
+
+html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, table, td, th, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;border:0;outline:0;}
+ 
+table {
+	border-collapse: collapse;
+	border-spacing:0;}
+
+fieldset, img {
+	border:0;}
+ 
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;}
+ 
+li {
+	list-style: none;}
+ 
+caption, th {
+	text-align: left;}
+ 
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;}
+ 
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;}
+
+ 
+/* =====================================================================
+*    Basic Format
+* =================================================================== */
+
+* {
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;}
+
+html,body {
+	height: 100%;}
+
+body {
+	color: #000;
+	line-height: 1.5;}
+ 
+hr {
+	display:none;}
+ 
+form {
+	margin:0;
+	padding:0;}
+ 
+input, textarea {
+	font-family: Helvetica, Arial, sans-serif;}
+ 
+input {
+	line-height: 1.2;}
+ 
+textarea {
+	padding: 0.4em 10px;}
+ 
+img {
+	/*vertical-align: bottom;*/}
+
+p {
+	line-height: 2.0;}
+
+abbr {
+	border: none;}
+
+
+/* =====================================================================    
+*    Font-size Adjustment
+*    
+*    77% = 10px	|	122% = 16px	|	167% = 22px	
+*    85% = 11px	|	129% = 17px	|	174% = 23px
+*    92% = 12px	|	136% = 18px	|	182% = 24px
+*    100% = 13px	|	144% = 19px	|	189% = 25px
+*    107% = 14px	|	152% = 20px	|	197% = 26px
+*    114% = 15px	|	159% = 21px	|
+* =================================================================== */
+
+ 
+body {
+	font-size:13px;
+	/* for IE6/7 */ 
+	*font-size:small;
+	/* for IE Quirks Mode */
+	*font:x-small; 
+}
+
+table {
+	font-size: inherit;
+	font: 100%;
+}
+ 
+select, input, textarea {
+	font-size: 99%;
+}
+
+
+/* =====================================================================
+*    Basic Font Format
+* =================================================================== */
+
+body {
+	font-family: Verdana,  Meiryo, Osaka,  sans-serif,微軟正黑體;}
+*:first-child+html body {
+	font-family: Verdana, Meiryo, sans-serif,微軟正黑體;}
+* html body {
+	font-family: Verdana,  Meiryo,  sans-serif,微軟正黑體;}
+
+
+.x-large   { font-size: 174%; }
+.large     { font-size: 144%; }
+.mid       { font-size: 122%; }
+.small     { font-size:  92%; }
+.x-small   { font-size:  77%; letter-spacing: 1px; }
+
+
+/* =====================================================================
+*    Basic Hyperlink Format
+* =================================================================== */
+
+/* \*/ a { outline:none; overflow:hidden; } /**/
+/* \*/ a:focus { outline:none; overflow:hidden; } /**/
+
+a         { color: #ffe100; text-decoration: none; }
+a:hover   { color: #ffe100; text-decoration: underline; }
+a:focus   { color: #ffe100; text-decoration: none; }
+a.altText:hover { background-color: transparent; }
+
+::-moz-selection {
+	background: #FFF;
+	color: #000;}
+::selection {
+	background: #FFF;
+	color: #FFF;}
+
+
+/* =====================================================================
+*    clearfix
+* =================================================================== */
+
+.clearfix:after,
+.send:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;}
+.clearfix,
+.send {	display:inline-block;}
+/* Hides from IE-mac \*/
+*html .clearfix,
+*html .send {
+	height:1%;}
+.clearfix,
+.send {
+	display:block;}
+/* End hide from IE-mac */

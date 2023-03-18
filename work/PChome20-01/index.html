@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html xmlns="http://www.w3.org/1999/xhtml" class="ie6 ieo"> <![endif]-->
+<!--[if IE 7 ]>    <html xmlns="http://www.w3.org/1999/xhtml" class="ie7 ieo"> <![endif]-->
+<!--[if IE 8 ]>    <html xmlns="http://www.w3.org/1999/xhtml" class="ie8 ieo"> <![endif]-->
+<!--[if IE 9 ]>    <html xmlns="http://www.w3.org/1999/xhtml" class="ie9 ieo"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+
+
+    <link rel="icon" href="https://www.pchome.com.tw/favicon.ico?v=1.0" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://www.pchome.com.tw/favicon.ico?v=1.0" />
+
+    <title>PChome 尋找財犬</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<!-- head:js -->
+	<!-- endinject -->
+</head>
+
+<body>
+
+    
+    <div class="wrapper rwd">
+        <div class="container">
+            <!-- 選單總覽 -->
+            <div class="menu-wrap">
+<!-- 首頁topbar start -->
+<div class="topnav-box w-full">
+    <!--nav -->
+    <nav>
+        <div class="menu-icon">
+            <i title="展開menu" data-icon="icon-topnav2" class="icon-topnav2"></i>
+        </div>
+        <div class="logo">
+            <a href="https://www.pchome.com.tw/" title="PChome" data-icon="PChome-w" class="PChome-w"><span>PChome</span></a>
+        </div>
+        <div class="menu">
+            <ul class="nav2">
+                <li><a href="#event-inf"><span>活動介紹</span></a></li>
+                <li><a href="#test"><span>每日題目</span></a></li>
+                <li><a href="#award"><span>中獎名單</span></a></li>
+                <li><a href="https://www.pchome.com.tw/" target="_blank"><span>首頁尋犬</span></a></li>
+                <li><a href="https://member.pchome.com.tw/login.html" target="_blank"><span>帳號登入</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--nav end-->
+    <script>
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</div>
+<!-- 首頁topbar end -->
+            </div>
+            <div class="topbox-wrap">
+                <!-- 頁首top nav -->
+                <!-- 頁首 標題-->
+                <div class="header-wrap" id="headerwrap">
+<!-- 置頂導覽 -->
+<div class="header-box" >
+    <div class="txt-table m-auto">
+        <div class="txt-cell pos-relative">
+            <h1 class="header-titlebox" title="尋找財犬 尋找柴犬 天天答題 天天抽餐券">
+                <object type="image/svg+xml" data="img/shiba3.svg" class="shiba3  wow bounceInDown" data-wow-delay="0.6s"></object>
+                <img class="header-titleimg wow zoomInDown" src="img/header-title.png" alt="尋找財犬 尋找柴犬 天天答題 天天抽餐券">
+                <img class="header-titleimg-m" src="img/header-title-m.png" alt="尋找財犬 尋找柴犬 天天答題 天天抽餐券">
+            </h1>  
+        </div>
+    </div>
+    <div class="txt-table step-box">
+        <h2 class="txt-cell step p1 pos-relative ">
+            <object type="image/svg+xml" data="img/shiba3.svg" class="shiba3 wow bounceInDown"></object>
+            <a href="https://www.pchome.com.tw/" target="_blank" title="step1 PChome首頁找財犬" class=" wow rollIn" data-wow-delay="0.5s">
+                <span>step1 PChome首頁找財犬</span>
+            </a>
+        </h2>
+        <h2 class="txt-cell step p2">
+            <a href="https://member.pchome.com.tw/login.html" title="step2 登入PChome帳號 回答心理測驗" class="wow bounceInDown" data-wow-delay="1s">
+                <span>step2 登入PChome帳號 回答心理測驗</span>
+            </a>
+        </h2>
+        <h2 class="txt-cell step p3">
+            <a href="#" title="step3 分享FB結果即可抽獎!" class="wow bounceInRight" data-wow-delay="1.5s">
+                <span>step3 分享FB結果即可抽獎!</span>
+            </a>
+        </h2>
+    </div>
+</div>
+
+                </div>
+
+                <!-- 內容 區塊1 心理測驗-->
+                <div class="content-wrap wrap1" id="test">
+
+<div class="content-box test-box p-30">
+    <h3 class="p-10 txt-center question-day-main shadow1 pos-relative wow fadeInUp">
+        <object type="image/svg+xml" data="img/hamster.svg" class="hamster"></object>
+        <span>2019.12.18<br>美食達人出題日：選餐測個性</span>
+    </h3>
+    <!--心理測驗-文字 start-->
+    <div class="w-full">
+        <div class=" test-txt-box">
+            <!--文字題目-->
+            <div style="display:;">
+                <h4 class="p-15 ali-middle question-tt-box flex wow fadeInUp">
+                    <i data-icon="icon_q" class="icon_q"></i>
+                    <span>每天光顧的飲料店，突然只賣無糖跟全糖飲料，愛喝半糖的你，會怎麼辦？</span>
+                </h4>
+                <div class="question-box bg-none" >                
+                    <h5 class="q1 ali-middle wow flipInX" data-wow-delay="0"><i class="icon-no1"></i>挑戰喝無糖飲料(或全糖)</h5>
+                    <h5 class="q2 ali-middle wow flipInX" data-wow-delay="0.5s"><i class="icon-no2"></i>無糖跟全糖各買一杯</h5>
+    
+                    <!--被選取的樣式active-->
+                    <h5 class="q3 ali-middle wow flipInX active" data-wow-delay="1s"><i class="icon-no3"></i>乾脆戒飲料</h5>
+                    <!--被選取的樣式-->
+    
+                </div>
+                <span class="p-30 txt-center">登入帳號答題+看結果！</span>
+                <div class="text-center btn-box flex">
+                    <!--題目顯示按鈕start-->
+                    <a class="txt-cell btn1 shadow animate gray wow fadeInUp">看結果</a>
+                    <!--題目顯示按鈕end-->              
+                </div>
+            </div>
+
+
+            <!--文字答案-->
+            <div style="display:;">
+                <h4 class="p-15 ali-middle question-tt-box flex wow fadeInUp">
+                    <i data-icon="icon_q" class="icon_q"></i>
+                    <span>每天光顧的飲料店，突然只賣無糖跟全糖飲料，愛喝半糖的你，會怎麼辦？</span>
+                </h4>
+                <div class="answer-box p-20">               
+                    <div class="txt-table a1-box no-pick wow fadeInUp" data-wow-delay="0">
+                        <div class="txt-cell txt-box">
+                            <h5 class="ali-middle">
+                                <i class="icon-no1"></i>無糖跟全糖各買一杯，你是<b>靈敏機智派</b>
+                            </h5>
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="progress-bar move" style="width:60%;"></div>
+                                    <div class="progress-value"><u>60</u>的尋犬人選❶</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-table a2-box no-pick wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="txt-cell txt-box">
+                            <h5 class="ali-middle">
+                                <i class="icon-no2"></i>挑戰喝無糖飲料(或全糖飲料），你是<b>勇於改變派</b>
+                            </h5>
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="progress-bar move" style="width:20%;"></div>
+                                    <div class="progress-value"><u>20</u>的尋犬人選❷</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-table a3-box pick wow fadeInUp" data-wow-delay="1s">
+                        <div class="txt-cell txt-box">
+                            <h5 class="ali-middle">
+                                <i class="icon-no3"></i>乾脆戒飲料，你是<b>拒絕妥協派</b>
+                            </h5>
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="progress-bar move" style="width:20%;"></div>
+                                    <div class="progress-value"><u>20</u>的尋犬人選❸</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="txt-cell txt-center"></span>
+                <div class="text-center btn-box flex">
+                    <!--答案顯示按鈕start-->               
+                    <a href="#" class="txt-cell btn1 shadow animate fb">分享至FB 抽餐券 </a>
+                    <!--答案顯示按鈕end-->                  
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--心理測驗-文字 end-->
+
+    <!--心理測驗-圖片 start-->
+    <div class="w-full">
+        <div class="test-pic-box">
+            <!--圖片題目-->
+            <div style="display:;">
+                <h4 class="p-15 ali-middle question-tt-box flex wow fadeInUp">
+                    <i data-icon="icon_q" class="icon_q"></i>
+                    <span>下面哪一張瀑布照片，讓你想要親自到現場看看？</span>
+                </h4>
+                <div class="txt-table txt-center question-box">
+                     <!--被選取的樣式active-->
+                    <h5 class="txt-cell q1-box  wow flipInY active" data-wow-delay="0s">
+                        <i class="icon-no1"></i>
+                        <span><img src="img/q1218-pic1.jpg" alt="圖片1"></span>
+                    </h5>
+                    <!--被選取的樣式-->  
+                    
+                    
+                    <h5 class="txt-cell q2-box wow flipInY" data-wow-delay="0.5s">
+                        <i class="icon-no2"></i>
+                        <span><img src="img/q1218-pic2.jpg" alt="圖片2"></span>
+                    </h5>
+                    <h5 class="txt-cell q3-box wow flipInY" data-wow-delay="1s">
+                        <i class="icon-no3"></i>
+                        <span><img src="img/q1218-pic3.jpg" alt="圖片3"></span>
+                    </h5>
+                </div>
+                <span class="p-30 txt-center">登入帳號答題+看結果！</span>
+                <div class="p-20 text-center btn-box flex">
+                    <!--題目顯示按鈕start-->
+                    <a class="txt-cell btn1 shadow animate gray">看結果</a>
+                    <!--題目顯示按鈕end-->              
+                </div>
+            </div>
+
+            <!--圖片答案-->
+            <div style="display:;">
+                <h4 class="p-15 ali-middle question-tt-box flex wow fadeInUp">
+                    <i data-icon="icon_q" class="icon_q"></i>
+                    <span>下面哪一張瀑布照片，讓你想要親自到現場看看？</span>
+                </h4>
+                <div class="answer-box p-20"> 
+    
+                    <!--被選擇的樣式-->              
+                    <div class="txt-table a1-box pick  wow fadeInUp" data-wow-delay="0s">
+                        <a class="txt-cell flex img-box" href="http://mypaper.pchome.com.tw/chum6686/post/1322367172" target="_blank">
+                            <img src="img/q1218-pic1.jpg" alt="">
+                            <i class="icon-no1"></i>
+                        </a>
+                        <div class="txt-cell txt-box">
+                            <h5>你是<b>講究細節型</b></h5>
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="progress-bar move" style="width:60%;"></div>
+                                    <div class="progress-value"><u>60</u>的尋犬人選❶</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--被選擇的樣式-->
+    
+                    <div class="txt-table a2-box no-pick  wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="txt-cell flex img-box" href="http://mypaper.pchome.com.tw/hatsocks75/post/1379851829" target="_blank">
+                            <img src="img/q1218-pic2.jpg" alt="">
+                            <i class="icon-no2"></i>
+                        </a>
+                        <div class="txt-cell txt-box">
+                            <h5>你是<b>喜愛特殊事物型</b></h5>
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="progress-bar move" style="width:20%;"></div>
+                                    <div class="progress-value"><u>20</u>的尋犬人選❷</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-table a3-box no-pick  wow fadeInUp" data-wow-delay="1s">
+                        <a class="txt-cell flex img-box" href="http://mypaper.pchome.com.tw/mikey2004/post/1333725195" target="_blank">
+                            <img src="img/q1218-pic3.jpg" alt="">
+                            <i class="icon-no3"></i>
+                        </a>
+                        <div class="txt-cell txt-box">
+                            <h5>你是<b>追求排場型</b></h5>
+                            <div class="progress-box">
+                                <div class="progress">
+                                    <div class="progress-bar move" style="width:20%;"></div>
+                                    <div class="progress-value"><u>20</u>的尋犬人選❸</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="p-tb30 txt-center">*點圖看文章*</span>
+                </div>             
+                <div class="text-center btn-box flex">
+                    <!--答案顯示按鈕start-->               
+                    <a href="#" class="txt-cell btn1 shadow animate fb">分享至FB 抽餐券</a>
+                    <!--答案顯示按鈕end-->                  
+                </div>
+            </div>            
+
+        </div>
+    </div>
+    <!--心理測驗-圖片 end-->
+</div>
+
+
+
+                </div>
+
+                <!-- 內容 區塊2 歷史題目 -->
+                <div class="content-wrap wrap2" id="history">
+<!-- 置頂導覽 -->
+<div class="content-box p-t15  pos-relative">
+    <h3 class="txt-center p-t15 flex history-tt-main">
+        <i class="icon_plam"></i>歷史題目<object type="image/svg+xml" data="img/shiba4.svg" class="shiba4"></object>
+    </h3>
+    <!--樣式1 文--> 
+    <div class="txt-table w-full  history-box p-30 wow fadeInUp">
+        <div class="txt-cell" id="day1218">            
+            <div class="history-tt-box txt-left" >
+                <h6 class="question-day p-b5">2019.12.18心裡測驗</h6>
+                <h5 class="question-tt">每天光顧的飲料店，突然只賣無糖跟全糖飲料，愛喝半糖的你，會怎麼辦？</h5>
+            </div>
+            <!--文字標題end-->
+            <!--文字-樣式內容start-->
+            <a class="btn1 shadow animate gray btn-dropdown " href="javascript:void(0);">看結果</a>
+            <div class="txt-center flex showinf">
+                <div class="txt-center p-tb20 flex answer-box">               
+                    <div class="a1-box no-pick">
+                        <h5 class="txt-box">
+                            <ul>
+                                <li><i class="icon-no1"></i></li>
+                                <li>無糖跟全糖各買一杯</li>
+                                <li><u>28</u>的尋犬人選❶</li>
+                                <li>你是<b>尷尬癌承受度30%</b></li>
+                            </ul>
+                        </h5>
+                    </div>
+                    <div class="a2-box pick">
+                        <h5 class="txt-box">
+                            <ul>
+                                <li><i class="icon-no2"></i></li>
+                                <li>挑戰喝無糖飲料(或全糖)</li>
+                                <li><u>28</u>的尋犬人選❷</li>
+                                <li>你是<b>勇於改變派</b></li>
+                            </ul>
+                        </h5>
+                    </div>
+                    <div class="a3-box no-pick">
+                        <h5 class="txt-box">
+                            <ul>
+                                <li><i class="icon-no3"></i></li>
+                                <li>乾脆戒飲料</li>
+                                <li><u>28</u>的尋犬人選❸</li>
+                                <li>你是<b>拒絕妥協派</b></li>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--文字-樣式內容區塊end-->
+        </div>
+    </div>
+
+    <!--樣式2 圖--> 
+    <div class="txt-table w-full  history-box  p-30 wow fadeInUp">
+        <div class="txt-cell" id="day1217">                      
+            <div class="history-tt-box txt-left">
+                <h6 class="question-day p-b5">2019.12.18部落客出題日：旅遊測個性</h6>
+                <h5 class="question-tt">下面哪一張瀑布照片，讓你想要親自到現場看看？</h5>
+            </div>
+            <!--文字標題end-->
+            <!--文字-樣式內容start-->
+            <a class="btn1 shadow animate gray btn-dropdown" href="javascript:void(0);">看結果</a>
+            <div class="txt-center flex showinf">
+                <div class="txt-center p-tb20 flex answer-box">               
+                    <div class="a1-box no-pick">
+                        <a class="flex img-box" href="http://mypaper.pchome.com.tw/chum6686/post/1322367172" target="_blank">
+                            <img src="img/q1218-pic1.jpg" alt="">
+                            <i class="icon-no1"></i>
+                        </a>
+                        <h5 class="txt-box">
+                            <ul>
+                                <li><u>51</u>的尋犬人選❶</li>
+                                <li>你是<b>講究細節型</b></li>
+                            </ul>
+                        </h5>
+                    </div>
+                    <div class="a2-box no-pick">
+                        <a class="flex img-box" href="http://mypaper.pchome.com.tw/hatsocks75/post/1379851829" target="_blank">
+                            <img src="img/q1218-pic2.jpg" alt="">
+                            <i class="icon-no2"></i>
+                        </a>
+                        <h5 class="txt-box">
+                            <ul>
+                                <li><u>28</u>的尋犬人選❷</li>
+                                <li>你是<b>喜愛特殊事物型</b></li>
+                            </ul>
+                        </h5>
+                    </div>
+                    <div class="a3-box pick">
+                        <a class="flex img-box" href="http://mypaper.pchome.com.tw/mikey2004/post/1333725195" target="_blank">
+                            <img src="img/q1218-pic3.jpg" alt="">
+                            <i class="icon-no3"></i>
+                        </a>
+                        <h5 class="txt-box">
+                            <ul>
+                                <li><u>62</u>的尋犬人選❸</li>
+                                <li>你是<b>追求排場型</b></li>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--文字-樣式內容區塊end-->
+        </div>
+    </div>
+
+
+
+
+</div>
+
+                </div>                
+            </div>
+
+            <!-- 內容 區塊3 活動說明+活動贈品  -->
+            <div class="content-wrap wrap3" id="event">
+<!-- 活動說明 -->
+<div class="content-box eventinf-box p-30 p-t60">
+    <!--活動說明-->
+    <h3 class="txt-center flex p-30" id="event-inf"><i data-icon="icon_plam" class="icon_plam"></i>活動說明</h3>
+    <h2 class="txt-center wow fadeInUp"> 即日起至2019.1.21<br>PM11:59為止</h2>
+    <h2 class="txt-center wow fadeInUp">登入PChome帳號完成活動流程<br>即可抽獎!</h2>
+    <p class="p-30 wow fadeInUp">
+        PC財犬每天都在PChome首頁閒逛，身為主人的你，每天的任務就是要到PChome首頁找到牠！找到狗狗的時候，別忘了登入PChome帳號 +
+        回答心理測驗，除了可以更瞭解自己以外，還有機會抽到<a title="果然匯官網" href="http://www.fruitfulfood.com.tw/" target="_blank">果然匯提供的「平日晚餐2人同行1人免費券」</a>，讓您可以與親朋好友一起共進晚餐唷！
+    </p>
+
+    <h3 class="txt-center flex p-30"><i data-icon="icon-plam" class="icon_plam"></i>活動贈品</h3>
+    <div class="txt-table eventinf-box">
+        <h3 class="m-10 txt-cell award-obj">
+            <a title="抽 果然匯 平日晚餐2人同行1人免費券" href="#buffetfood" target="_blank" class="wow fadeInRightBig">
+                <img src="img/eventinf-boxbg1.png" alt="抽 果然匯 平日晚餐2人同行1人免費券">
+            </a>
+        </h3>
+        <h3 class="m-10 txt-cell award-obj pos-relative">
+            <object type="image/svg+xml" data="img/shiba1.svg" class="shiba1 wow bounceInDown" data-wow-delay="0.5s"></object>
+            <a title="加碼抽限量PChome筆記本 " href="https://www.facebook.com/PChomePortal2019/" target="_blank" class="wow fadeInLeftBig">
+                <img src="img/eventinf-boxbg2.png" alt="加碼抽限量PChome筆記本">
+            </a>
+        </h3>
+    </div>
+    <!--活動說明 end-->
+</div>
+            </div>
+
+            <!-- 內容 區塊4 果然匯-->
+            <div class="content-wrap wrap4">
+<!-- 果然匯start -->
+<div class="txt-center content-box buffet-top-box p-30">
+    <h3 class="buffet-logo" id="buffetfood">
+        <a href="http://www.fruitfulfood.com.tw/" alt="果然匯 LOGO" target="_blank">
+            <img src="img/food-logo.png" alt="果然匯 LOGO">
+        </a>        
+    </h3>
+    <h2 class="buffet-tt-box p-b15 wow fadeInUp">
+        <img src="img/food-tit.png" alt="果然匯 CNN推薦 超人氣蔬食料理">
+    </h2>
+    <p class="shadow1 wow fadeInUp">
+        以國際料理為舞台、本地食材為主角，匯集豐富蔬果及自然食材，提倡蔬食機能餐飲，用好滋味照顧每位顧客及這片土地。
+    </p>
+    <h5 class="p-tb10">
+        <a href="http://www.fruitfulfood.com.tw/shop_detail.php?id=7" target="_blank" class="p-tb5 txtline">台北明曜百貨12F</a>．
+        <a href="http://www.fruitfulfood.com.tw/shop_detail.php?id=15" target="_blank" class="p-tb5 txtline">板橋中山遠百11F</a>．
+        <a href="http://www.fruitfulfood.com.tw/shop_detail.php?id=13" target="_blank" class="p-tb5 txtline">桃園統領7F</a>．
+        <a href="http://www.fruitfulfood.com.tw/shop_detail.php?id=14" target="_blank" class="p-tb5 txtline">高雄夢時代3</a>
+    </h5>
+    <a href="https://www.facebook.com/www.fruitfulfood.com.tw/" alt="果然匯 粉絲團" target="_blank" class="icon-fbshare wow fadeInUp">
+        <img src="img/icon-foodfb.png" alt="果然匯 粉絲團">
+    </a>  
+</div>
+<div class="buffet-box p-b20">
+    <div class="txt-table buffetinf-box">
+        <h3 class="txt-cell food-obj wow zoomIn">
+            <span>
+                <img src="img/food-pic1.png" alt="手作PIZZA O3活氧沙拉吧 熱炒美饌">
+            </span>
+        </h3>
+        <h3 class=" txt-cell food-obj wow zoomIn">
+            <span>
+                <img src="img/food-pic2.png" alt="烤揚名物 甜點珠寶櫃 季節鍋物">
+            </span>
+        </h3>
+    </div>
+</div>
+<!-- 果然匯end -->
+            </div>
+                
+            <!-- 頁尾 得獎.注意.版權 -->
+            <div class="footer-wrap">
+            
+<div class="content-box award-box p-t60" id="award">
+    <h3 class=" txt-center flex"><i data-icon="icon_plam" class="icon_plam"></i>得獎名單</h3>
+    <h5 class="p-t15 p-lr15 p-b5 pos-relative  wow fadeInUp">
+        <a href="http://www.fruitfulfood.com.tw/" title="果然匯官網" target="_blank">果然匯</a>- 平日晚餐2人同行1人免費券   
+        <object type="image/svg+xml" data="img/shiba5.svg" class="shiba5"></object>
+    </h5>
+    <div class="p-lr20 wow fadeInUp">本得獎名單每天更新一次</div>
+    <div class="award-list-box wow fadeInUp" data-wow-delay="0.2s">
+        <div class="day">
+            <h6><b>2020.1.2</b><b>尚未公布</b><b>尚未公怖</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2020.1.1</b><b>loveflo1314</b><b>唐x紅</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.31</b><b>girl5222</b><b>毛x毛</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.30</b><b>btsloveyou1</b><b>花x子</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.29</b><b>missyou</b><b>威x</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.28</b><b>missyou</b><b>威x</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.27</b><b>missyou</b><b>威x</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.26</b><b>missyou</b><b>威x</b></h6>
+        </div>
+        <div class="day">
+            <h6><b>2019.12.25</b><b>missyou</b><b>威x</b></h6>
+        </div>
+    </div>
+    <h5 class="p-15">PChome筆計本:請至
+        <a class="txtline" href="https://www.facebook.com/PChomePortal2019/" target="_blank">
+            PChome首頁搜查線粉絲團</a>置頂文查看。
+    </h5>
+</div>
+<div class="content-box note-box p-lr15 p-b60">
+    <h3 class="txt-center flex p-30 pos-relative">
+        <img src="img/icon-dog3.png" alt="狗狗"  class="shiba6">
+        <i data-icon="icon_plam" class="icon_plam"></i>注意事項
+    </h3>
+        
+    <ul class="txt-left note-list-box p-30">
+        <li class=" wow fadeInUp" data-wow-delay="0.2s">
+            1.獎項內容與餐券之使用規則，皆以贊助廠商提供票券之票面資訊為準，得獎人使用餐券前，須自行注意票券使用之相關資訊。並且不得要求獎項更換、變現或要求主辦單位轉寄給他人使用。
+        <li class=" wow fadeInUp" data-wow-delay="0.4s">
+
+        <li class=" wow fadeInUp" data-wow-delay="0.6s">
+            2.主辦單位保有隨時修改及終止本活動之權利，如有任何變更內容或詳細注意事項將公布於本網頁，恕不另行通知。
+        <li>
+
+        <li class=" wow fadeInUp" data-wow-delay="0.8s">3.本次活動贈品僅寄至台灣本島地區。<br><br></li>
+
+        <li><b> 得獎者須知：</b></li>
+        <li class=" wow fadeInUp" data-wow-delay="1s">得獎者名單以此頁面公告為主，主辦單位將以E-mail通知，收到通知者，請於收到得獎信件後之10日內以E-mail回覆贈品寄送聯絡資訊。（包括中獎姓名、手機、收件地址），逾時回覆將會取消其中獎資格。</li>
+    </ul>
+</div>
+<!-- 版權宣告 -->
+<div class="content-box copy-box txt-center p-30">
+    <div class="">
+        <a data-linkdef="頁尾版權_3_0" href="https://www.pchome.com.tw/copyright.html">著作權保護</a> | 網路家庭版權所有、轉載必究 ‧Copyright
+        PChome Online
+        <p >PChome Online and PChome are trademarks of PChome Online Inc.</p>
+    </div>
+</div>
+            </div>
+
+            <!-- 側邊浮動 -->
+            <div class="sidebar-wrap">
+    <!-- side nav -->
+
+    <div id="stickyNav" class="gotop txt-center">
+            <a href="#headerwrap" title="go top">
+                <img src="img/gotop.png" alt="gotop">
+            </a>     
+    </div>
+
+    
+    <!-- end side nav -->
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 700);
+
+    });
+
+
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            $(".header-box").css('opacity', 1 - ($(window).scrollTop() / 2500));
+        });
+
+    })
+
+
+
+    $(function () {
+
+        $(".gotop").hide();
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    $('.gotop').fadeIn();
+                } else {
+                    $('.gotop').fadeOut();
+                }
+            });
+        });
+
+    });
+
+    $(".showinf").slideUp();
+    $(".btn-dropdown").click(function () {
+        $(this).next('.showinf').toggle();
+    });
+
+</script>
+<script>
+    var wow = new WOW(
+        {
+            boxClass: 'wow',      // 要套用WOW.js縮需要的動畫class(預設是wow)
+            animateClass: 'animated', // 要"動起來"的動畫(預設是animated, 因此如果你有其他動畫library要使用也可以在這裡調整)
+            offset: 0,          // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+            mobile: false,       // 手機上是否要套用動畫 (預設是true)
+            live: true,       // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+            callback: function (box) {
+                // 當每個要開始時, 呼叫這裡面的內容, 參數是要開始進行動畫特效的element DOM
+            },
+            scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+        }
+    );
+    wow.init();
+</script>
+
+
+</body>
+</html>

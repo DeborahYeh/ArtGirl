@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.all{width:100%;background:url(../img/bg_wall.gif);overflow: hidden;}
+.headbg{background:url(../img/head_bg.png) repeat-x;height:415px; position:relative;z-index: 3}
+.head{background:url(../img/head_fg.png) top center no-repeat;height:410px;position:relative;margin:auto}
+.head > div{width: 1110px;height:410px;margin:auto;position:relative;}
+.head:before{ content:""; background: url(../img/head_eyes.gif)  no-repeat top center; width: 100%; height: 415px; position: absolute;}
+.head> div > .tit{width:645px;height:310px;background:url(../img/head_title.png) no-repeat;position:absolute;top: 6px;	left: 86px;}
+.head > div >.tit > .clou{position:absolute; left: 338px; top: 15px;}
+.head > div >.tit > .lim{position:absolute;left: 507px;top: 5px;	height: 96px;}
+.head > div >.tit > .eye{position:absolute; left: -84px; top: 246px;}
+.head > div > .hot{width:420px; height:390px; background:url(../img/head_hotbg.png) no-repeat ; float:right; position:relative;}
+.head > div > .hot>a{width:275px;height:295px; position:absolute;top: 46px;left: 96px;}
+.head >div>.hot > img{position:absolute;top: 20px;left: 121px;}
+.content{z-index:0; background:url(../img/cont_bg.png) top center no-repeat;margin:auto;margin-top:-20px;}
+.content > .box{margin:auto;height:455px;width:990px;}
+.content >.box.x01{background:url(../img/cont_box01.png) top center no-repeat; position:relative;}
+.content >.box.x01 > a{ display:block; cursor:pointer}
+.content >.box.x01 > a.main{position:absolute;width:318px;height:336px;left: 18px;top: 84px;}
+.content >.box.x01 > a.obj01{position:absolute;width:208px;height:320px;left: 354px;top: 91px;}
+.content >.box.x01 > a.obj02{position:absolute;width:220px;height:187px;left: 567px;top: 93px;}
+.content >.box.x01 > a.obj021{position:absolute;width:133px;height:81px;left: 790px;top: 93px;}
+.content >.box.x01 > a.obj03{position:absolute;width:168px;height:126px;left: 629px;top: 288px;}
+.content >.box.x01 > a.obj031{position:absolute;width:165px;height:209px;left: 794px;top: 200px;}
+.content >.box.x02{background:url(../img/cont_box02.png) top center no-repeat;position:relative;}
+.content >.box.x02 > a{ display:block; cursor:pointer}
+.content >.box.x02 > a.main{position:absolute;width:318px;height:336px;left: 18px;top: 84px;}
+.content >.box.x02 > a.obj01{position:absolute;width:180px;height:320px;left: 354px;top: 91px;}
+.content >.box.x02 > a.obj02{position:absolute;width:220px;height:192px;left: 542px;top: 88px;}
+.content >.box.x02 > a.obj021{position:absolute;width:121px;height:104px;left: 765px;top: 89px;}
+.content >.box.x02 > a.obj03{position:absolute;width:168px;height:126px;left: 626px;top: 288px;}
+.content >.box.x02 > a.obj031{position:absolute;width:165px;height:209px;left: 795px;top: 206px;}
+
+.content > .box.x03{background:url(../img/cont_box03.png) top center no-repeat;position:relative;height: 395px;}
+.content > .box.x03>a{ display:block; cursor:pointer; /* border: 1px solid red; */}
+.content > .box.x03>a.main{	position:absolute;width:230px;height:260px;	left: 23px;top: 90px;}
+.content > .box.x03>a.obj01{position:absolute;width:230px;height:260px;left: 261px;top: 90px;}
+.content > .box.x03>a.obj02{position:absolute;width:230px;height:260px;left: 497px;top: 90px;}
+.content > .box.x03>a.obj03{position:absolute;width:230px;height:260px;left: 734px;top: 90px;}
+
+.content > .box.x04{ background:url(../img/cont_box04.png) top center no-repeat; padding: 82px 0 0 38px; height: 283px;display:none;}
+.content > .box.x04 > div{box-shadow:4px 4px 3px #aa2121;}
+
+
+.foot{clear:both; background:url(../img/foot_bg.png) bottom repeat-x;height: 130px;}
+.foot > div{ background:url(../img/foot_inf.png) no-repeat;width:948px;height:89px; position:relative;margin:auto}
+.foot>div > a{display:block;}
+.foot>div > a.pc{position:absolute;width:195px;height:63px;left: 56px;top: 0px;}
+.foot>div > a.f1{position:absolute;width: 355px;	height:63px;left: 315px;top: 0px;}
+.foot>div > a.f2{position:absolute;width: 280px;height:63px;left: 701px;	top: 0px;}
+/*.foot>div > a.f3{position:absolute;width:130px;height:63px;top: 0px;left: 820px;}*/
+#pageTop {width: 80px;height:90px;position:fixed;bottom: 73px;right: 5px;display: block; }
+#pageTop a {display: block;width: 80px;height:90px; background:url(../img/btn_gotop.png);transition: 0.3s;}
+#pageTop a:hover {background:url(../img/btn_gotop_hv.png) }

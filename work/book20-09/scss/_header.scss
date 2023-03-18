@@ -1,0 +1,154 @@
+
+.header {
+	padding: 10px 0;
+	background-color: #dc0001;
+	color: #fff;
+	position: relative;
+	font-size: 12px;
+	img {
+		width: 100%;
+		display: block;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		font-weight: 400;
+	}
+	.container {
+		padding: 0;
+		.logo {
+			width: 167px;
+		}
+		ul.pchome_web {
+			li:first-child a:before, li a:after {
+				content: '|';
+				display: inline-block;
+				padding: 0 10px;
+				color: #ffffff !important;
+			}			
+		}
+		ul.pchome_member {
+			a {
+				padding: 0 5px;
+			}
+		}
+
+	}
+}
+#site-logo {
+	padding: 7px 0;
+	.logo {
+		width: 120px;
+		margin-right: 16px;
+	}
+	.logo img {
+		width: 100%;
+		display: block;
+	}
+	h4 {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+	.slider_box {
+		width: 370px;
+		position: relative;
+		img {
+			width: 100%;
+			display: block;
+		}
+		.swiper-slide {
+			overflow: hidden;
+			a {
+				display: block;
+				overflow: hidden;
+			}
+		}
+	}
+}
+/*--- goTOP ---*/
+.right_box {
+    display: none;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    z-index: 9;
+    -webkit-transition: 0s;
+            transition: 0s;
+}
+.right_box img {
+    width: 100%;
+}
+.gotop {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(164, 164, 164, 0.85);
+	padding: 7px 6px 3px;
+	float: right;
+	@include border-radius(100%);
+	@include transition(0.3s);
+	a.mb {
+		display: none;
+	}
+}
+.gotop:hover {
+    background-color: rgba(164, 164, 164, 1);
+}
+
+@media only screen and (max-width: 1023px) {
+	.header {
+		.container {
+			-webkit-box-pack: center !important;
+			-ms-flex-pack: center !important;
+			justify-content: center !important;
+		}
+		ul.pchome_web, ul.pchome_member {
+			display: none !important;
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	#site-logo {
+		padding: 0;
+		.logo_box {
+			display: none !important;
+		}
+		.slider_box {
+			position: fixed;
+			z-index: 9;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background: #fff;
+			padding: 3px 17px;
+			@include box-shadow(0 0 5px rgba(0, 0, 0, .2));
+		}
+	}
+	.right_box {
+		bottom: 18vw;
+	}
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		width: 100%;
+		padding: 9px 0 7px;
+		height: 35px;
+		.container .logo {
+			width: 140px;
+		}
+	}
+	.gotop a.pc {
+		display: none !important;
+	}
+	.gotop a.mb {
+		display: block !important;
+	}
+}
+@media only screen and (max-width: 480px) {
+
+}

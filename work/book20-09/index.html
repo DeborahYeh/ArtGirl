@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="" id="base">
+    <script>
+        var isOnline = location.host.indexOf('pchomeec'); // check online
+        var urlStlye = location.host.indexOf('www'); // check url style`
+        var baseTag = document.getElementById("base");
+        var loadURL; // use for jQ load & pages-link
+        var sites; // now sites
+        if (isOnline == -1) {
+            console.log('local');
+            loadURL = "";
+            baseTag.href = "";
+        } else {
+            console.log('online')
+            sitesIndex = location.pathname.split('/');
+            sites = sitesIndex[sitesIndex.indexOf('sites') + 1];
+            baseTag.href = '//a.ecimg.tw/img/sites/' + sites + '/';
+            if (isOnline && (urlStlye !== -1)) {
+                console.log('url1')
+                loadURL = 'https://www.pchomeec.tw/cdn/sites/' + sites + '/';
+            } else if (isOnline && (urlStlye == -1)) {
+                console.log('url2')
+                loadURL = 'https://' + sites + '.pchomeec.tw/cdn/sites/' + sites + '/';
+            }
+        }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>PChome書店 - PChome24h購物</title>
+    <meta name="title" content="PChome書店 - PChome24h購物">
+    <meta name="keywords" content="24h書店,網路書店,書籍,電子書,影音,雜誌,PChome,24h購物">
+    <meta name="description"
+        content="PChome Online書店提供中外文書、童書、雜誌、電子書、影音，隸屬台灣最大的電子商務集團PChome網路家庭（8044-tw）旗下，是台灣消費者購買書籍的首選。">
+    <meta name="author" content="PChome線上購物">
+    <meta name="copyright" content="網路家庭版權所有、轉載必究 ● Copyright PChome Online">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PChome書店 - PChome24h購物">
+    <meta property="og:description"
+        content="PChome Online書店提供中外文書、童書、雜誌、電子書、影音，隸屬台灣最大的電子商務集團PChome網路家庭（8044-tw）旗下，是台灣消費者購買書籍的首選。">
+    <meta property="og:image" content="https://a.ecimg.tw/css/2016/style/images/v201607/sitelogo/h24.png">
+    <meta property="og:site_name" content="PChome 24h購物">
+    <link rel="apple-touch-icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-64x64.ico" sizes="64x64" />
+    <link rel="icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-64x64.ico" sizes="64x64" />
+    <link rel="icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-32x32.ico" sizes="32x32" />
+    <link rel="icon" type="image/x-icon" href="https://e.ecimg.tw/img/icon/24-16x16.ico" sizes="16x16" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!--CSS-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/layout.css">
+    <link type="text/css" rel="stylesheet" href="css/bookstyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap&subset=chinese-traditional">
+
+    <!-- Google Tag Manager -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'site': '24h'
+        });
+        window.dataLayer && window.dataLayer.push({
+            'event': 'custom.event.pageview'
+        });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TKSM5PF');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKSM5PF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <div class="header" id="top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="logo"><a href="https://24h.pchome.com.tw/"><img src="img/24hLOGO.png"></a></div>
+                <ul class="d-flex pchome_web">
+                    <li><a target="_blank" href="https://shopping.pchome.com.tw/">線上購物</a></li>
+                    <li><a target="_blank" href="https://24h.pchome.com.tw/">24h購物</a></li>
+                    <li><a target="_blank" href="https://24h.pchome.com.tw/books/">書店</a></li>
+                    <li><a target="_blank" href="https://www.pchomeec.tw/sites/overseasgoods">國際代購</a></li>
+                    <li><a target="_blank" href="https://pchometravel.com/">旅遊</a></li>
+                </ul>
+            </div>
+            <ul class="d-flex pchome_member">
+                <li><a target="_blank" href="https://ecssl.pchome.com.tw/sys/cflow/index/BigCar/BIGCAR/ItemList">購物車</a>
+                </li>
+                <li><a target="_blank"
+                        href="https://www.pchomeprime.com.tw/activity/cobrand/citi/apply.htm">PChome聯名卡</a></li>
+                <li><a target="_blank" href="https://ecvip.pchome.com.tw/web/coupon">折價券</a></li>
+                <li><a target="_blank" href="https://ecvip.pchome.com.tw/web/savings/deposit/list">儲值</a></li>
+                <li><a target="_blank" href="https://ecvip.pchome.com.tw/web/PPoint/list">P幣</a></li>
+                <li><a target="_blank" href="https://ecvip.pchome.com.tw/web/ShoppingBenefit/CashPoint/Main">現金積點</a>
+                </li>
+                <li><a target="_blank" href="https://ecvip.pchome.com.tw/">顧客中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END // Header -->
+
+    <!-- 品牌 -->
+    <div class="container d-flex align-items-center justify-content-center" id="site-logo">
+        <div class="d-flex align-items-center logo_box">
+            <div class="logo"><img src="img/gallery/logo_bookstore.svg" alt="PChome書店"></div>
+        </div>
+    </div>
+    <!-- END // 品牌 -->
+
+    <!-- 側邊goTOP -->
+    <div class="right_box">
+        <div class="gotop">
+            <a href="#top" class="pc"><img src="img/top.svg"></a>
+            <a href="#book-header" class="mb"><img src="img/top.svg"></a>
+        </div>
+    </div>
+    <!-- END // 側邊goTOP -->
+
+    <!-- 選單 -->
+    <div class="container navbox book-nav">
+        <nav>
+            <div class="nav_wrap">
+                <ul class="main_menu">
+                    <li>
+                        <a href="javascript:void(0)">電子書<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list1">
+                            <div class="row">
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <dd>電子書</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                        <dd>電子書閱讀器</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN6C" target="_blank"
+                                                title="kobo電子書閱讀器">kobo電子書閱讀器</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN05" target="_blank"
+                                                title="mooInk電子書閱讀器">mooInk電子書閱讀器</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN6X" target="_blank"
+                                                title="HyRead電子書閱讀器">HyRead電子書閱讀器</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN6Y" target="_blank"
+                                                title="BOOX 電子書閱讀器">BOOX 電子書閱讀器</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN77" target="_blank"
+                                                title="★閱讀器預購★">★閱讀器預購★</a></li>
+                                    </dl>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN9J" target="_blank"
+                                                title="文學小說">文學小說</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNB9" target="_blank"
+                                                title="商業理材">商業理材</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN7W" target="_blank"
+                                                title="社會科學">社會科學</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNDG" target="_blank"
+                                                title="自然科普">自然科普</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNAX" target="_blank"
+                                                title="生活風格">生活風格</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN93" target="_blank"
+                                                title="旅遊情報">旅遊情報</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNCV" target="_blank"
+                                                title="醫療保健">醫療保健</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN9Z" target="_blank"
+                                                title="心理勵志">心理勵志</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNCG" target="_blank"
+                                                title="宗教命理">宗教命理</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN8T" target="_blank"
+                                                title="電腦科技">電腦科技</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNBQ" target="_blank"
+                                                title="藝術設計">藝術設計</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNCN" target="_blank"
+                                                title="兒童與青少年">兒童與青少年</a></li>
+
+                                    </dl>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN8W" target="_blank"
+                                                title="親子教養">親子教養</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNAK" target="_blank"
+                                                title="語言學習">語言學習</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN88" target="_blank"
+                                                title="漫畫">漫畫</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNDB" target="_blank"
+                                                title="考試用書">考試用書</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBNAW" target="_blank"
+                                                title="有聲書">有聲書</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN7A" target="_blank"
+                                                title="寫真集">寫真集</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBND1" target="_blank"
+                                                title="雜誌">雜誌</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBN7Y" target="_blank"
+                                                title="外文書">外文書</a></li>
+                                    </dl>
+                                </ul>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">中文書<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list2">
+                            <div class="row">
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <dd>中文書</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/newarrival/" target="_blank"
+                                                title="天天新書">天天新書</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJAM/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAM" target="_blank"
+                                                title="文學小說">文學小說</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAK" target="_blank"
+                                                title="語言學習">語言學習</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAD" target="_blank"
+                                                title="行銷企管">行銷企管</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBA" target="_blank"
+                                                title="財經投資">財經投資</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAH" target="_blank"
+                                                title="生活風格">生活風格</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAU" target="_blank"
+                                                title="育兒教養">育兒教養</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAF" target="_blank"
+                                                title="童書繪本">童書繪本</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAZ" target="_blank"
+                                                title="輕小說">輕小說</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAW" target="_blank"
+                                                title="動漫">動漫</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAP" target="_blank"
+                                                title="人文">人文</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBI" target="_blank"
+                                                title="社科">社科</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBH" target="_blank"
+                                                title="宗教信仰">宗教信仰</a></li>
+                                    </dl>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBC" target="_blank"
+                                                title="自然科學">自然科學</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBE" target="_blank"
+                                                title="星座命理">星座命理</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAO" target="_blank"
+                                                title="健康養生">健康養生</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBG" target="_blank"
+                                                title="心靈勵志">心靈勵志</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAY" target="_blank"
+                                                title="烹調飲食">烹調飲食</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBB" target="_blank"
+                                                title="藝術設計">藝術設計</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAA" target="_blank"
+                                                title="電腦資訊">電腦資訊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJBD" target="_blank"
+                                                title="旅遊">旅遊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAT" target="_blank"
+                                                title="政府刊物">政府刊物</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/region/DJAV" target="_blank"
+                                                title="教科考">教科考</a></li>
+                                    </dl>
+                                </ul>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">簡體書<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list3">
+                            <div class="row">
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <dd>簡體書</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBJ/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBJ/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBJ/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBJ/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ01" target="_blank"
+                                                title="文學小說">文學小說</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ02" target="_blank"
+                                                title="社會人文">社會人文</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ03" target="_blank"
+                                                title="宗教信仰">宗教信仰</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ04" target="_blank"
+                                                title="自然科學">自然科學</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ05" target="_blank"
+                                                title="健康養生">健康養生</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ06" target="_blank"
+                                                title="烹調飲食">烹調飲食</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ07" target="_blank"
+                                                title="親子教育">親子教育</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ08" target="_blank"
+                                                title="語言學習">語言學習</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0H" target="_blank"
+                                                title="行銷企管">行銷企管</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ09" target="_blank"
+                                                title="財經投資">財經投資</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0A" target="_blank"
+                                                title="藝術設計">藝術設計</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0C" target="_blank"
+                                                title="生活／手作">生活／手作</a></li>
+                                    </dl>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0D" target="_blank"
+                                                title="旅遊">旅遊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0E" target="_blank"
+                                                title="電腦資訊">電腦資訊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0F" target="_blank"
+                                                title="教科考用／專業">教科考用／專業</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0J" target="_blank"
+                                                title="法律">法律</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBJ0G" target="_blank"
+                                                title="影音商品">影音商品</a></li>
+                                    </dl>
+                                </ul>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">外文書<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list4">
+                            <div class="row">
+                                <ul class="col-lg-6 col-md-6 col-12">
+                                    <dl>
+                                        <dd>外文書</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBM/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBM/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBM/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBM/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                </ul>
+                                <ul class="col-lg-6 col-md-6 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM1U" target="_blank"
+                                                title="主題專區">主題專區</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM1R" target="_blank"
+                                                title="Song Baby">Song Baby</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM05" target="_blank"
+                                                title="認知學齡前3-6歲">認知學齡前3-6歲</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM00" target="_blank"
+                                                title="啟蒙嬰幼兒0-3歲">啟蒙嬰幼兒0-3歲</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM0I" target="_blank"
+                                                title="英文學習(中文書)">英文學習(中文書)</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM0D" target="_blank"
+                                                title="有聲書">有聲書</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM19" target="_blank"
+                                                title="廖彩杏聽出英文力">廖彩杏聽出英文力</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBM0F" target="_blank"
+                                                title="USmommy">USmommy</a></li>
+                                    </dl>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">雜誌<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list5">
+                            <div class="row">
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <dd>雜誌</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJAG/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJAG/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJAG/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJAG/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <dd>中文雜誌</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG04" target="_blank"
+                                                title="商業財經．時事週刊">商業財經．時事週刊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG07" target="_blank"
+                                                title="婦幼親子．健康生活">婦幼親子．健康生活</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG01" target="_blank"
+                                                title="流行時尚">流行時尚</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG09" target="_blank"
+                                                title="影視娛樂．休閒嗜好">影視娛樂．休閒嗜好</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG0A" target="_blank"
+                                                title="汽車‧機車‧單車">汽車‧機車‧單車</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG08" target="_blank"
+                                                title="電腦攝影">電腦攝影</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG05" target="_blank"
+                                                title="居家設計">居家設計</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG0O" target="_blank"
+                                                title="語言學習">語言學習</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG1X" target="_blank"
+                                                title="科普人文史地">科普人文史地</a></li>
+                                    </dl>
+                                </ul>
+                                <ul class="col-lg-4 col-md-4 col-12">
+                                    <dl>
+                                        <dd>外文雜誌</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2I" target="_blank"
+                                                title="財經時事科技">財經時事科技</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2J" target="_blank"
+                                                title="歐美流行時尚">歐美流行時尚</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2P" target="_blank"
+                                                title="運動競技">運動競技</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2K" target="_blank"
+                                                title="汽車機車交通">汽車機車交通</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2V" target="_blank"
+                                                title="親子育樂">親子育樂</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2S" target="_blank"
+                                                title="電腦科學攝影">電腦科學攝影</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2W" target="_blank"
+                                                title="生活風格家庭">生活風格家庭</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2L" target="_blank"
+                                                title="建築裝潢">建築裝潢</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2R" target="_blank"
+                                                title="影視偶像">影視偶像</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2M" target="_blank"
+                                                title="藝術設計">藝術設計</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2T" target="_blank"
+                                                title="音樂音響">音樂音響</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2O" target="_blank"
+                                                title="休閒嗜好旅遊">休閒嗜好旅遊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJAG2U" target="_blank"
+                                                title="同志閱讀">同志閱讀</a></li>
+                                    </dl>
+                                </ul>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">MOOK<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list6">
+                            <div class="row">
+                                <ul class="col-lg-6 col-md-6 col-12">
+                                    <dl>
+                                        <dd>MOOK</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBF/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBF/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBF/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBF/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                </ul>
+                                <ul class="col-lg-6 col-md-6 col-12">
+                                    <dl>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF01" target="_blank"
+                                                title="女性流行時尚">女性流行時尚</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF02" target="_blank"
+                                                title="男性生活風格">男性生活風格</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF04" target="_blank"
+                                                title="人氣卡漫動畫">人氣卡漫動畫</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF06" target="_blank"
+                                                title="親子兒童繪本">親子兒童繪本</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF08" target="_blank"
+                                                title="樂活休閒旅遊">樂活休閒旅遊</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF05" target="_blank"
+                                                title="簡單居家生活">簡單居家生活</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF09" target="_blank"
+                                                title="創意手工技藝">創意手工技藝</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF03" target="_blank"
+                                                title="影視偶像收藏">影視偶像收藏</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF28" target="_blank"
+                                                title="人氣樂譜精選">人氣樂譜精選</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DJBF1J" target="_blank"
+                                                title="性感寫真18+">性感寫真18+</a></li>
+                                    </dl>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">影音<span class="aw_icon"></span></a>
+                        <ul class="dropdown sub_dp list7">
+                            <div class="row">
+                                <ul class="col-lg-6 col-md-6 col-12">
+                                    <dl>
+                                        <dd>音樂CD</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAB/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAB/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAB/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAB/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                        <li class="m-t10"><a href="https://24h.pchome.com.tw/books/store/DNAB33"
+                                                target="_blank" title="古典音樂">古典音樂</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAB11" target="_blank"
+                                                title="亞洲音樂">亞洲音樂</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAB1S" target="_blank"
+                                                title="西洋音樂">西洋音樂</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAB5F" target="_blank"
+                                                title="爵士音樂">爵士音樂</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNABD0" target="_blank"
+                                                title="黑膠唱片">黑膠唱片</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNABCG" target="_blank"
+                                                title="音樂DVD/BD">音樂DVD/BD</a></li>
+                                    </dl>
+                                </ul>
+                                <ul class="col-lg-6 col-md-6 col-12">
+                                    <dl>
+                                        <dd>DVD_BD</dd>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAA/rank/0"
+                                                target="_blank" title="新書排行榜">新書排行榜</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAA/rank/1"
+                                                target="_blank" title="週暢銷">週暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DNAA/rank/2"
+                                                target="_blank" title="月暢銷">月暢銷</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/?fq=/R/DJBN/rank/3"
+                                                target="_blank" title="季暢銷">季暢銷</a></li>
+                                        <li class="m-t10"><a href="https://24h.pchome.com.tw/books/store/DNAA30"
+                                                target="_blank" title="電影分類">電影分類</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAA3C" target="_blank"
+                                                title="藍光分類">藍光分類</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAA1K" target="_blank"
+                                                title="電視分類">電視分類</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAA2E" target="_blank"
+                                                title="卡通動畫">卡通動畫</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAA3Y" target="_blank"
+                                                title="藝術欣賞">藝術欣賞</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAA3T" target="_blank"
+                                                title="休閒運動">休閒運動</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAA23" target="_blank"
+                                                title="知識教育">知識教育</a></li>
+                                        <li><a href="https://24h.pchome.com.tw/books/store/DNAAEA" target="_blank"
+                                                title="音樂DVD/BD">音樂DVD/BD</a></li>
+                                    </dl>
+                                </ul>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_mb d-flex align-items-center">
+                <div class="navbar-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="title_mb d-flex justify-content-center align-items-center">
+                    <img src="img/gallery/logo_bookstore.svg" alt="PChome 書店">
+                    <!-- <h4>品牌旗鑑館</h4> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- END //選單 -->
+
+    <!-- 版身開始 -->
+    <div class="wrap">
+        <div class="book-bg-0">
+
+            <!-- 書店刊頭 -->
+            <header class="container-fluid book-header">
+                <h1><img src="img/gallery/h1.svg" alt="PChome書店 －「學習」創造奇蹟"></h1>
+            </header>
+            <!-- END // 書店刊頭 -->
+
+            <!-- 4個menu -->
+            <div class="section event_bn">
+                <div class="container">
+                    <!-- <div class="row mt-1"> -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <a href="#section1" class="ani_scale btn1" title="為自己加薪">
+                                <img src="img/gallery/btn-icon1.svg" alt="無自己加薪" class="icon1"><span>為自己加薪</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <a href="#section2" class="ani_scale btn2" title="職場風水學">
+                                <img src="img/gallery/btn-icon2.svg" alt="職場風水學" class="icon2"><span>職場風水學</span></a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <a href="#section3" class="ani_scale btn3" title="抵抗負能量">
+                                <img src="img/gallery/btn-icon4.svg" alt="職場風水學" class="icon3"><span>抵抗負能量</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <a href="#section4" class="ani_scale btn4" title="健康續航力">
+                                <img src="img/gallery/btn-icon3.svg" alt="職場風水學" class="icon4"><span>健康續航力</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END // 4個menu -->
+
+            <!-- 版塊1 -->
+            <div class="section" id="section1">
+                <div class="container">
+                    <!-- 分類標題1 -->
+                    <div class="cont-tt-box tt1">
+                        <h5><span><img src="img/gallery/cont-icon-1.png" alt="為自己加薪"></span>為自己加薪<i>!</i></h5>
+                    </div>
+                    <!-- END // 分類標題1 -->
+                </div>
+                <div class="container pd_wrap">
+                    <!-- 版身商品 -->
+                    <ul class="row promo" id="section_01"></ul>
+                    <!-- END // 版身商品 -->
+                    <!-- 活動bannner1公版 開始 -->
+                    <div class="promo evbanner-box style1">
+                        <img src="img/gallery/evbanner1.png" alt="白蘭氏深海魚油+蝦紅素 明星商品" class="web">
+                        <img src="img/gallery/evbanner1-m.png" alt="白蘭氏深海魚油+蝦紅素 明星商品" class="phone">   
+
+                        <div class="content-box">
+                            <h5><img src="img/gallery/icon-evttt1.svg" alt="icon">財運指數★★★☆☆</h5>
+                            <ul>
+                                <li><img src="img/gallery/icon-hook1.svg" alt="icon">打造30歲後日常保養防護牆</li>
+                                <li><img src="img/gallery/icon-hook1.svg" alt="icon"> 對抗忙碌生活流失的代謝力</li>
+                                <li><img src="img/gallery/icon-hook1.svg" alt="icon">預防日常生活三大問題</li>
+                            </ul>
+                            <span class="flex"><a  title="more" target="_blank" href="https://mall.brands.com.tw/ctn/zh_TW/%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9/%E7%86%9F%E9%BD%A1%E4%BF%9D%E5%81%A5/%E3%80%90%E7%99%BD%E8%98%AD%E6%B0%8F%E6%B7%B1%E6%B5%B7%E9%AD%9A%E6%B2%B9%2B%E8%9D%A6%E7%B4%85%E7%B4%A0-120%E9%8C%A0-%E7%9B%92%E3%80%91%E5%8F%B0%E7%81%A3%E7%8D%B2%E4%B8%96%E7%95%8C%E9%A3%9F%E5%93%81%E5%93%81%E8%B3%AA%E8%A9%95%E9%91%91%E6%9C%80%E9%AB%98%E9%87%91%E7%8D%8E%E7%9A%84%E9%AD%9A%E6%B2%B9/p/000000000014004739?utm_source=pchome&utm_medium=display&utm_campaign=ipup_programmatic__pchome-202010&utm_content=tar-new_prospected_single_jpg_201005-rmfo-repurchase-a_pchome&utm_term=rmfo_201005_pch_c002" class="btn flex">立即了解本月優惠<img src="img/gallery/icon-arrow1.svg" alt="立即了解本月優惠"></a></span>
+                        </div>
+                    </div>
+                    <!-- 活動bannner1公版 結束-->
+                </div>
+            </div>
+            <!-- END // 版塊1 -->
+
+            <!-- 版塊2 -->
+            <div class="section" id="section2">
+                <div class="container">
+                    <!-- 分類標題2 -->
+                    <div class="cont-tt-box tt2">
+                        <h5><span><img src="img/gallery/cont-icon-2.png" alt="職場風水學"></span>職場風水學<i>!</i></h5>
+                    </div>
+                    <!-- END // 分類標題2 -->
+                </div>
+                <div class="container pd_wrap">
+                    <!-- 版身商品 -->
+                    <ul class="row promo" id="section_02"></ul>
+                    <!-- END // 版身商品 -->
+                    <!-- 活動bannner2公版 開始 -->
+                    <div class="promo evbanner-box style2">
+                        <img src="img/gallery/evbanner2.png" alt="toto馬桶" class="web">
+                        <img src="img/gallery/evbanner2-m.png" alt="toto馬桶" class="phone">   
+
+                        <div class="content-box">
+                            <h5><img src="img/gallery/icon-evttt1.svg" alt="icon">貴人運指數★★★★★</h5>
+                            <ul>
+                                <li><img src="img/gallery/icon-hook1.svg" alt="icon">我家可以裝溫水洗淨便座嗎?</li>
+                                <li><img src="img/gallery/icon-hook1.svg" alt="icon">我家適合什麼型號的溫水洗淨便座?</li>
+                                <li><img src="img/gallery/icon-hook1.svg" alt="icon">溫水洗淨便座好保養嗎?</li>
+                            </ul>
+                            <span class="flex"><a title="more" target="_blank" href="https://www.twtoto.com.tw/advisory.aspx?utm_source=pchome&utm_medium=display&utm_campaign=advisory&utm_content=pictextead" class="btn flex">立即線上諮詢<img src="img/gallery/icon-arrow1.svg" alt="立即線上諮詢"></a></span>
+                        </div>
+                    </div>
+                    <!-- 活動bannner2公版 結束-->
+                </div>
+            </div>
+            <!-- END // 版塊2 -->
+
+            <!-- 版塊3 -->
+            <div class="section" id="section3">
+                <div class="container">
+                    <!-- 分類標題3 -->
+                    <div class="cont-tt-box tt3">
+                        <h5><span><img src="img/gallery/cont-icon-3.png" alt="抵抗負能量"></span>抵抗負能量<i>!</i></h5>
+                    </div>
+                    <!-- END // 分類標題3 -->
+                </div>
+                <div class="container pd_wrap">
+                    <!-- 版身商品 -->
+                    <ul class="row promo" id="section_03"></ul>
+                    <!-- END // 版身商品 -->
+                    <!-- 活動bannner3公版 開始 -->
+                    <div class="promo evbanner-box style3">
+                        <img src="img/gallery/evbanner1.png" alt="白蘭氏深海魚油+蝦紅素 明星商品" class="web">
+                        <img src="img/gallery/evbanner1-m.png" alt="白蘭氏深海魚油+蝦紅素 明星商品" class="phone">   
+
+                        <div class="content-box">
+                        <h5><img src="img/gallery/icon-evttt1.svg" alt="icon">財運指數★★★☆☆</h5>
+                            <ul>
+                            <li><img src="img/gallery/icon-hook1.svg" alt="icon">打造30歲後日常保養防護牆</li>
+                            <li><img src="img/gallery/icon-hook1.svg" alt="icon"> 對抗忙碌生活流失的代謝力</li>
+                            <li><img src="img/gallery/icon-hook1.svg" alt="icon">預防日常生活三大問題</li>
+                        </ul>
+                        <span class="flex"><a href="#" title="more" target="_blank" href="#" class="btn flex">立即了解本月優惠<img src="img/gallery/icon-arrow1.svg" alt="立即了解本月優惠"></a></span>
+                    </div>
+                    </div>
+                    <!-- 活動bannner3公版 結束-->
+                </div>
+            </div>
+            <!-- END // 版塊3 -->
+
+            <!-- 版塊4 -->
+            <div class="section" id="section4">
+                <div class="container">
+                    <!-- 分類標題4 -->
+                    <div class="cont-tt-box tt4">
+                        <h5><span><img src="img/gallery/cont-icon-4.png" alt="健康續航力"></span>健康續航力<i>!</i></h5>
+                    </div>
+                    <!-- END // 分類標題4 -->
+                </div>
+                <div class="container pd_wrap">
+                    <!-- 版身商品 -->
+                    <ul class="row promo" id="section_04"></ul>
+                    <!-- END // 版身商品 -->
+
+                <!-- 活動bannner4公版 開始 -->
+                <div class="promo evbanner-box style4">
+                    <img src="img/gallery/evbanner1.png" alt="白蘭氏深海魚油+蝦紅素 明星商品" class="web">
+                    <img src="img/gallery/evbanner1-m.png" alt="白蘭氏深海魚油+蝦紅素 明星商品" class="phone">   
+
+                    <div class="content-box">
+                        <h5><img src="img/gallery/icon-evttt1.svg" alt="icon">財運指數★★★☆☆</h5>
+                        <ul>
+                            <li><img src="img/gallery/icon-hook1.svg" alt="icon">打造30歲後日常保養防護牆</li>
+                            <li><img src="img/gallery/icon-hook1.svg" alt="icon"> 對抗忙碌生活流失的代謝力</li>
+                            <li><img src="img/gallery/icon-hook1.svg" alt="icon">預防日常生活三大問題</li>
+                        </ul>
+                        <span class="flex"><a href="#" title="more" target="_blank" href="#" class="btn flex">立即了解本月優惠<img src="img/gallery/icon-arrow1.svg" alt="立即了解本月優惠"></a></span>
+                    </div>
+                </div>
+                <!-- 活動bannner4公版 結束-->
+                </div>
+            </div>
+            <!-- EMD // 版塊4 -->
+
+        </div>
+    </div>
+    <!-- END // 版身 -->
+
+    <!-- Footer -->
+    <div class="d-flex justify-content-center d-flex align-items-center card_note">
+        <div class="left">謹慎理財　信用至上</div>
+        <ul class="right">
+            <li>花旗信用卡循環利率：6.88%~15%，循環利率基準日為104年9月1日；預借現金手續費：</li>
+            <li>預借現金金額乘以3.5%加上新臺幣100元其他費用請上<a href="https://www.citibank.com.tw/" target="_blank">花旗網站</a>查詢。</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <ul class="d-flex justify-content-center align-items-center mb-3">
+            <li class="text">追蹤我們</li>
+            <li><a href="https://www.facebook.com/pchome24h/" target="_blank"><img src="img/fb_new.svg"></a></li>
+            <li><a href="https://www.instagram.com/pchome24h/" target="_blank"><img src="img/ig_new.svg"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCb2aGEzl5Ki5juwPolnC-PA" target="_blank"><img
+                        src="img/youtube_new.svg"></a></li>
+            <li><a href="https://line.me/R/ti/p/@pchome24h" target="_blank"><img src="img/line_new.svg"></a></li>
+        </ul>
+        <p>本活動頁商品規格、顏色、價位、贈品如與銷售網頁不符，以銷售網頁標示為準！</p>
+        <p>網路家庭版權所有Copyright PChome Online版權所有，轉載必究</p>
+    </div>
+    <!-- END // Footer -->
+
+    <!--JS-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        // ----------------
+        // 版頭輪播Banner
+        // ----------------
+        var slider = new Array();
+        slider = [{
+                imgPC: "1900x510_1.jpg",
+                imgMB: "m_768x400_1.jpg",
+                link: "11"
+            },
+            // {
+            //     imgPC: "1900x510_2_2.jpg",
+            //     imgMB: "m_768x400_2_2.jpg",
+            //     link: "22"
+            // },
+        ];
+        var html_slider = '';
+        for (var i = 0; i < slider.length; i++) {
+            html_slider += '<a href="' + slider[i]['link'] + '" target="_blank" class="swiper-slide">';
+            html_slider += '<div class="img_pc" style="background: url(img/gallery/' + slider[i]['imgPC'] +
+                ') top center repeat-x"></div>';
+            html_slider += '<img src="img/gallery/' + slider[i]['imgMB'] + '" class="mb"></a>';
+        }
+        $('#main_slider .swiper-wrapper').html(html_slider);
+
+        // ----------------
+        // 產品資訊
+        // ----------------
+        var themePD = new Array();
+        themePD = [{
+                // (版塊1_為自己加薪)
+                content: [{
+                        "name": "開運織眉（電子書）",
+                        "author": "葉瑃雯",
+                        "hotline": "改變面相、改變命運！",
+                        "note": "特價",
+                        "hot_price": "380",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJBNAX-D900AVK2X",
+                        "pic": "1-1-0928.jpg"
+                    },
+                    {
+                        "name": "這樣拜財神才有效",
+                        "author": "王品豊",
+                        "hotline": "隨書內附「送窮稟文」",
+                        "note": "特價",
+                        "hot_price": "261",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A900AOKO4",
+                        "pic": "1-2-0928.jpg"
+                    },
+                    {
+                        "name": "大耕老師超準紫微牌",
+                        "author": "楊欽堯（大耕老師）",
+                        "hotline": "工作、愛情50問",
+                        "note": "特價",
+                        "hot_price": "916",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A9009RTHE",
+                        "pic": "1-3-0928.jpg"
+                    },
+                    {
+                        "name": "一出手就成交（電子書）",
+                        "author": "萊恩．塞爾漢",
+                        "hotline": "「拋球」思維放大視野",
+                        "note": "特價",
+                        "hot_price": "266",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJBNB9-D900AUXY7?fq=/S/DJBNB9",
+                        "pic": "1-4-0928.jpg"
+                    },
+                    {
+                        "name": "年年18%，一生理財這樣做就對了（全新修訂版）",
+                        "author": "施昇輝",
+                        "hotline": "財務自由你也做得到",
+                        "note": "特價",
+                        "hot_price": "300",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A900AU6YE",
+                        "pic": "1-5-0928.jpg"
+                    },
+                    {
+                        "name": "職場黑馬簡報術",
+                        "author": "黑主任",
+                        "hotline": "升職加薪必備",
+                        "note": "特價",
+                        "hot_price": "284",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A900APWZH",
+                        "pic": "1-6-0928.jpg"
+                    },
+                    {
+                        "name": "加薪申請書",
+                        "author": "哈羅德",
+                        "hotline": "沒績效哪算員工",
+                        "note": "特價",
+                        "hot_price": "198",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A900AHGKV",
+                        "pic": "1-7-0928.jpg"
+                    },
+                    {
+                        "name": "上班只要做對１件事力",
+                        "author": "保野成敏、中山遼二",
+                        "hotline": "累積工作彈跳力",
+                        "note": "特價",
+                        "hot_price": "221",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A90087PTD",
+                        "pic": "1-8-0928.jpg"
+                    },
+                ],
+            },
+            {
+                // (版塊2_職場風水學) 
+                content: [{
+                        "name": "善良的你，更要有心機！",
+                        "author": "YUUKI YUU、齊藤勇",
+                        "hotline": "心理學實戰套書",
+                        "note": "特價",
+                        "hot_price": "561",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD0Z-A900AUZR8",
+                        "pic": "2-1-0928.jpg"
+                    },
+                    {
+                        "name": "圖解職場心理學",
+                        "author": "齊藤勇",
+                        "hotline": "不能只靠防小人",
+                        "note": "特價",
+                        "hot_price": "261",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A9009TGQP",
+                        "pic": "2-2-0928.jpg"
+                    },
+                    {
+                        "name": "職場八字識人術",
+                        "author": "周雨薇、李品心、江幸芬、黃冠寰",
+                        "hotline": "教你如何招貴人防小人",
+                        "note": "特價",
+                        "hot_price": "300",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAH0H-A9007S72F",
+                        "pic": "2-3-0928.jpg"
+                    },
+                    {
+                        "name": "難搞的不是工作，而是每天相處的同事！",
+                        "author": "小羅密歐．羅德里格斯",
+                        "hotline": "48招擊退辦公室小人",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A900A1GJF",
+                        "pic": "2-4-0928.jpg"
+                    },
+                    {
+                        "name": "改運之書．格局篇（電子書）",
+                        "author": "大耕老師",
+                        "hotline": "補破局、布好局",
+                        "note": "特價",
+                        "hot_price": "294",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJBN9R-D900AUOQM?fq=/S/DJBN9R",
+                        "pic": "2-5-0928.jpg"
+                    },
+                    {
+                        "name": "觀相：謝沅瑾教你知人知面又知心",
+                        "author": "謝沅瑾",
+                        "hotline": "史上第一本3D面相書",
+                        "note": "特價",
+                        "hot_price": "300",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAH0C-A90067CL8",
+                        "pic": "2-6-0928.jpg"
+                    },
+                    {
+                        "name": "職場塔羅星想法（限量簽名版）",
+                        "author": "星星王子",
+                        "hotline": "小人遠離、情場得意！",
+                        "note": "特價",
+                        "hot_price": "988",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAH0E-A9009HQGF",
+                        "pic": "2-7-0928.jpg"
+                    },
+                    {
+                        "name": "假面心理學",
+                        "author": "許大鵬",
+                        "hotline": "情緒「密碼機制」",
+                        "note": "特價",
+                        "hot_price": "269",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A900AF4AS",
+                        "pic": "2-8-0928.jpg"
+                    },
+                ],
+            },
+            {
+                // (版塊3_抵抗負能量) 
+                content: [{
+                        "name": "熱愛可抵歲月漫長，它是疲憊生活的英雄夢想",
+                        "author": "老楊的貓頭鷹",
+                        "hotline": "敲醒所有還想耍廢的人",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A900AV2XQ",
+                        "pic": "3-1-0928.jpg"
+                    },
+                    {
+                        "name": "好好回話，開啟好關係（電子書）",
+                        "author": "鄭惠信",
+                        "hotline": "改運，打造好關係",
+                        "note": "特價",
+                        "hot_price": "252",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJBNDA-D900AW251?fq=/S/DJBNDA",
+                        "pic": "3-2-0928.jpg"
+                    },
+                    {
+                        "name": "臣服的力量（新編版）",
+                        "author": "茱迪斯．歐洛芙",
+                        "hotline": "每一刻都是最好的安排",
+                        "note": "特價",
+                        "hot_price": "316",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A900ATVZD",
+                        "pic": "3-3-0928.jpg"
+                    },
+                    {
+                        "name": "長大以後就會變好嗎",
+                        "author": "KnowYourself主創們",
+                        "hotline": "破解25種心靈困境",
+                        "note": "特價",
+                        "hot_price": "269",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A900AVD35",
+                        "pic": "3-4-0928.jpg"
+                    },
+                    {
+                        "name": "你明明心好累，為何還裝作無所謂",
+                        "author": "金容太",
+                        "hotline": "接納自己內在真實需要",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A900ATMX7",
+                        "pic": "3-5-0928.jpg"
+                    },
+                    {
+                        "name": "記得你是誰（暢銷15萬冊紀念版）",
+                        "author": "戴西．魏德蔓（Daisy Wademan）",
+                        "hotline": "哈佛的最後一堂課",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAD3J-A900ASGFC",
+                        "pic": "3-6-0928.jpg"
+                    },
+                    {
+                        "name": "實現願望的星座許願指南",
+                        "author": "鏡龍司",
+                        "hotline": "傾聽星座的指引",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAK1S-A900AKC1I",
+                        "pic": "3-7-0928.jpg"
+                    },
+                    {
+                        "name": "【有聲書】青春正效應（電子書）",
+                        "author": "蔡淇華",
+                        "hotline": "啟動生命的正向系統",
+                        "note": "特價",
+                        "hot_price": "350",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJBNDR-D900AVQ6D",
+                        "pic": "3-8-0928.jpg"
+                    },
+                ],
+            },
+            {
+                // (版塊4_健康續航力) 
+                content: [{
+                        "name": "開運瑜伽（電子書）",
+                        "author": "皇昌季",
+                        "hotline": "學會開運冥想法",
+                        "note": "特價",
+                        "hot_price": "231",
+                        "link": "https://24h.pchome.com.tw/books/prod/QFCD56-D900AHVMF-000?fq=/S/DJBNCV",
+                        "pic": "4-1-0928.jpg"
+                    },
+                    {
+                        "name": "補充特定營養素的全植物蔬食料理（電子書）",
+                        "author": "高韻均",
+                        "hotline": "健康天然無添加 ",
+                        "note": "特價",
+                        "hot_price": "315",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJBN7Z-D900AV4PX",
+                        "pic": "4-2-0928.jpg"
+                    },
+                    {
+                        "name": "快速瘦肚！間歇性斷食減醣全書：減醣權威醫師實證，一週瘦３公斤，速減內臟脂肪、擊退糖尿病！",
+                        "author": "江部康二",
+                        "hotline": "減醣+間歇性斷食全書",
+                        "note": "特價",
+                        "hot_price": "284",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAO21-A900AURHF",
+                        "pic": "4-3-0928.jpg"
+                    },
+                    {
+                        "name": "遠離慢性疲勞！消除疲累大百科：睡眠、飲食、習慣、工作、壓力，讓你整天不累的70個妙招",
+                        "author": "工藤孝文",
+                        "hotline": "消除疲勞、身心輕盈",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAO21-A900ATR8X",
+                        "pic": "4-4-0928.jpg"
+                    },
+                    {
+                        "name": "關節修復自癒運動：10秒伸展，簡單有效！集中鍛鍊偷懶肌肉，解除膝、腰、肩、腳踝、手腕疼痛，延緩關節退化",
+                        "author": "笹川大瑛",
+                        "hotline": "消除疼痛與僵硬",
+                        "note": "特價",
+                        "hot_price": "253",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAO21-A900AT5N1",
+                        "pic": "4-5-0928.jpg"
+                    },
+                    {
+                        "name": "幸福瘦：不節食、不復胖，從心開始的23堂療癒減重對話",
+                        "author": "馬文雅",
+                        "hotline": "寫給受夠減重的你",
+                        "note": "特價",
+                        "hot_price": "284",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAO21-A900AT701",
+                        "pic": "4-6-0928.jpg"
+                    },
+                    {
+                        "name": "居家鍛鍊輕鬆瘦：第一本大人小孩都輕鬆上手的簡易肌力運動大全",
+                        "author": "幫客教練／小瞇（攝）",
+                        "hotline": "居家可做的簡易鍛鍊",
+                        "note": "特價",
+                        "hot_price": "300",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAO21-A900ATIOY",
+                        "pic": "4-7-0928.jpg"
+                    },
+                    {
+                        "name": "人體免疫抗病醫學書：打破偽常識， 啟動防疫自救力",
+                        "author": "安保徹、石原結實、福田稔",
+                        "hotline": "醫學常識可能會害了你",
+                        "note": "特價",
+                        "hot_price": "332",
+                        "link": "https://24h.pchome.com.tw/books/prod/DJAO21-A900AUC3E",
+                        "pic": "4-8-0928.jpg"
+                    },
+                ],
+            },
+        ];
+
+        function html(dataNum, divID) {
+            var html_themePD = '';
+            for (var i = 0; i < themePD[dataNum].content.length; i++) {
+                // console.log(themePD[dataNum].content[i]);
+                html_themePD += '<li class="col-6 col-md-6 col-lg-3"><a href="' + themePD[dataNum].content[i]['link'] +
+                    '" target="_blank">';
+                html_themePD +=
+                    '<div class="icon d-flex align-items-end"><img src="img/search.svg" class="d-block"></div><div class="book-cover"><img src="img/item/' +
+                    themePD[dataNum].content[i]['pic'] + '"></div>';
+                html_themePD += '<div class="hotline">' + themePD[dataNum].content[i]['hotline'] + '</div>';
+                html_themePD += '<div class="author">' + themePD[dataNum].content[i]['author'] + '</div>';
+                html_themePD += '<div class="pd_title">' + themePD[dataNum].content[i]['name'] + '</div>';
+                html_themePD += '<div class="price"><small>' + themePD[dataNum].content[i]['note'] +
+                    '</small> <small>$</small>' + themePD[dataNum].content[i]['hot_price'] + '</div>';
+                html_themePD += '</a></li>';
+            }
+            $(divID).html(html_themePD);
+        }
+        html(0, '#section_01');
+        html(1, '#section_02');
+        html(2, '#section_03');
+        html(3, '#section_04');
+        html(4, '#section_05');
+        html(5, '#section_06');
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>

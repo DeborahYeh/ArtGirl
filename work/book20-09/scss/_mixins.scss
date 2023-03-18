@@ -1,0 +1,316 @@
+$keyRed: #d32226;
+$keyBlue: #158bca;
+$lightBlue: #00b0ec;
+$mediumBlue: #cce6f8;
+$grayBlue: #dfeff5;
+$borderGray: #CCCCCC;
+$textGray: #3f3f3f;
+$lightGray: #f2f2f2;
+$btnGray: #818181;
+$labelGray: #a2a2a2;
+$mediumGrey: #dcdcdc;
+$modalGrey: #f7f7f7;
+
+
+@mixin background-gradient($color-top, $color-stop) {
+  background: ($color-top);
+  background: -moz-linear-gradient(top, $color-top 0%, $color-stop 100%);
+  background: -webkit-linear-gradient(top, $color-top 0%, $color-stop 100%);
+  background: linear-gradient(to bottom, $color-top 0%, $color-stop 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color-top, endColorstr=$color-stop, GradientType=0);
+
+  // background: #3ce0ec;
+  // background: -moz-linear-gradient(top, #3ce0ec 0%, #15a3c8 100%);
+  // background: -webkit-linear-gradient(top, #3ce0ec 0%, #15a3c8 100%);
+  // background: linear-gradient(to bottom, #3ce0ec 0%, #15a3c8 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ce0ec', endColorstr='#15a3c8', GradientType=0);
+
+
+}
+
+//
+// Box-sizing
+//
+@mixin box-sizing($box-sizing) {
+  -webkit-box-sizing: $box-sizing;
+     -moz-box-sizing: $box-sizing;
+      -ms-box-sizing: $box-sizing;
+          box-sizing: $box-sizing;
+}
+//
+// transform
+//
+@mixin transform($value) {
+  -webkit-transform: $value;
+     -moz-transform: $value;
+      -ms-transform: $value;
+      -o-transform: $value;
+         transform: $value;
+}
+//
+// transform-origin
+//
+@mixin transform-origin($value) {
+  -webkit-transform-origin: $value;
+  -moz-transform-origin: $value;
+  -ms-transform-origin: $value;
+  -o-transform-origin: $value;
+  transform-origin: $value;
+}
+//
+// flexBox
+//
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-width($value) {
+  -webkit-box-flex: $value;
+     -moz-box-flex: $value;
+      -webkit-flex: $value;
+          -ms-flex: $value;
+              flex: $value;
+}
+@mixin align-center { 
+  -webkit-align-items: center;
+     -moz-align-items: center;
+  -ms-flex-item-align: center;
+          align-items: center;
+}
+@mixin align-end { 
+    -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+     -moz-align-items: flex-end;
+  -ms-flex-item-align: end;
+          align-items: flex-end;
+}
+@mixin space-between { 
+  -webkit-box-align-content: space-between;
+    -webkit-justify-content: space-between;
+       -moz-justify-content: space-between;
+            justify-content: space-between;
+}
+@mixin justify-center { 
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+          justify-content: center;
+            -ms-flex-pack: center;
+}
+@mixin flex-end {
+         -webkit-box-pack: justify;
+  -webkit-justify-content: flex-end;
+            -ms-flex-pack: justify;
+            -moz-box-pack: justify;
+          justify-content: flex-end;
+}
+@mixin flex-wrap($value) {
+      -moz-box-wrap: $value;
+   -webkit-box-wrap: $value;
+  -webkit-flex-wrap: $value;
+   -ms-flexbox-wrap: $value;
+      -ms-flex-wrap: $value;
+          flex-wrap: $value;
+}
+//
+// clearfix
+//
+@mixin clearfix {
+  & {
+    zoom: 1;
+  }
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+@mixin clearself {
+  overflow: hidden;
+}
+//
+// font-family
+//
+@mixin number-font {
+  font-family: Helvetica, Arial, sans-serif;
+}
+@mixin font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+  line-height: ($sizeValue * 1.6) + px;
+}
+// border-radius
+//
+@mixin border-radius ( $radius ) {
+  @include background-clip-padding-box;
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin border-top-radius ( $radius ) {
+  @include background-clip-padding-box;
+  -webkit-border-top-left-radius: $radius;
+     -moz-border-radius-topleft:  $radius;
+          border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+     -moz-border-radius-topright:  $radius;
+          border-top-right-radius: $radius;
+}
+@mixin border-right-radius ( $radius ) {
+  @include background-clip-padding-box;
+  -webkit-border-top-right-radius: $radius;
+     -moz-border-radius-topright:  $radius;
+          border-top-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+     -moz-border-radius-bottomright:  $radius;
+          border-bottom-right-radius: $radius;
+}
+@mixin border-bottom-radius ( $radius ) {
+  @include background-clip-padding-box;
+  -webkit-border-bottom-left-radius: $radius;
+     -moz-border-radius-bottomleft:  $radius;
+          border-bottom-left-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+     -moz-border-radius-bottomright:  $radius;
+          border-bottom-right-radius: $radius;
+}
+@mixin border-left-radius ( $radius ) {
+  @include background-clip-padding-box;
+  -webkit-border-top-left-radius: $radius;
+     -moz-border-radius-topleft:  $radius;
+          border-top-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+     -moz-border-radius-bottomleft:  $radius;
+          border-bottom-left-radius: $radius;
+}
+@mixin background-clip-padding-box {
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+//
+// box-shadow
+//
+@mixin box-shadow ( $value, $value2: '' ) {
+  @if $value2 == '' {
+  -webkit-box-shadow: $value;
+     -moz-box-shadow: $value;
+          box-shadow: $value;
+  } @else {
+  -webkit-box-shadow: $value, $value2;
+     -moz-box-shadow: $value, $value2;
+          box-shadow: $value, $value2;
+  }
+}
+@mixin transition ( $value ) {
+  -webkit-transition: $value;
+     -moz-transition: $value;
+       -o-transition: $value;
+          transition: $value;
+}
+
+//
+// columns
+//
+@mixin column-count ( $columns ) {
+  -webkit-column-count: $columns;
+     -moz-column-count: $columns;
+          column-count: $columns;
+}
+@mixin column-gap ( $value ) {
+  -webkit-column-gap: $value;
+     -moz-column-gap: $value;
+          column-gap: $value;
+}
+//
+// Opacity
+//
+@mixin opacity ( $value ) {
+  opacity: $value;
+  filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($value * 100)})");
+}
+//
+// filter
+//
+@mixin filter ( $value ) {
+  -webkit-filter: $value;
+          filter: $value;
+}
+//
+// other minins by yougi
+//
+@mixin one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+}
+@mixin font-small($i) {
+  font-size: $i + px;
+  font-size-adjust: none;
+}
+@mixin user-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@mixin align-pic {
+    & {
+        display:table;
+        table-layout:fixed;
+        overflow:hidden;
+    }
+    .align{
+        width:100%;
+        height:100%;
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+        span{
+            *height:100%;
+            *display:inline-block;
+            *vertical-align:middle;
+        }
+        img{
+            vertical-align:middle;
+        }
+    }
+}
+@mixin light-box-setting($width, $height, $position) {
+  top: 50%;
+  left: 50%;
+  width: $width - 30;
+  height: $height - 30;
+  margin-left: ($width - 30)/2 * -1;
+  margin-top: ($height - 30)/2 * -1;
+  position: $position;
+}
+@mixin setMediaQueries($media) {
+  @if $media == pc {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+  @else if $media == pad_h {
+    @media only screen and (min-width: 991px) and (max-width: 1023px)  { @content; }
+  }
+  @else if $media == pad_v {
+    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+  @else if $media == phone {
+    @media only screen and (min-width: 0px) and (max-width: 767px) { @content; }
+  }
+}
+
+@mixin buttonPressShadow  {
+  webkit-box-shadow: inset 3px 3px 2px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 3px 3px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: inset 3px 3px 2px 0px rgba(0,0,0,0.1);
+}
